@@ -1,0 +1,3 @@
+Hello World Python
+Test Read txt file di Python  
+Semoga sukses

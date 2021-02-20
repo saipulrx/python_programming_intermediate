@@ -1,0 +1,19 @@
+{
+    "emp_details": [
+        {
+            "emp_name": "Amir",
+            "email": "amir22@gmail.com",
+            "age": 22
+        },
+        {
+            "emp_name": "Intan",
+            "email": "intan2@gmail.com",
+            "age": 25
+        },
+        {
+            "emp_name": "Doni",
+            "email": "doni11@gmail.com",
+            "age": 28
+        }
+    ]
+}
