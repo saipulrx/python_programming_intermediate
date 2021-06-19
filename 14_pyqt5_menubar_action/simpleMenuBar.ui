@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kumpulan Aplikasi PyQt5</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAplikasi">
+    <property name="title">
+     <string>Aplikasi DB</string>
+    </property>
+    <widget class="QMenu" name="menuForm_Data_Barang">
+     <property name="title">
+      <string>Form Data Barang</string>
+     </property>
+     <addaction name="actionCRUD_Data_Barang"/>
+     <addaction name="actionNavigasi_Data_Barang"/>
+    </widget>
+    <addaction name="actionForm_Data_Buku"/>
+    <addaction name="menuForm_Data_Barang"/>
+    <addaction name="separator"/>
+    <addaction name="actionForm_Create_New_DB_Tables"/>
+   </widget>
+   <widget class="QMenu" name="menuAplikasi_NonDB">
+    <property name="title">
+     <string>Aplikasi Non DB</string>
+    </property>
+    <widget class="QMenu" name="menuTest">
+     <property name="title">
+      <string>Test</string>
+     </property>
+     <widget class="QMenu" name="menuTest_1">
+      <property name="title">
+       <string>Test 1</string>
+      </property>
+      <widget class="QMenu" name="menuTest_2">
+       <property name="title">
+        <string>Test 2</string>
+       </property>
+       <widget class="QMenu" name="menuTest_3">
+        <property name="title">
+         <string>Test 3</string>
+        </property>
+        <widget class="QMenu" name="menuTest_4">
+         <property name="title">
+          <string>Test 4</string>
+         </property>
+         <widget class="QMenu" name="menuTest_5">
+          <property name="title">
+           <string>Test 5</string>
+          </property>
+          <addaction name="actionTest_6"/>
+         </widget>
+         <addaction name="menuTest_5"/>
+        </widget>
+        <addaction name="menuTest_4"/>
+       </widget>
+       <addaction name="menuTest_3"/>
+      </widget>
+      <addaction name="menuTest_2"/>
+     </widget>
+     <addaction name="menuTest_1"/>
+    </widget>
+    <addaction name="actionDemo_QTableWidget"/>
+    <addaction name="menuTest"/>
+   </widget>
+   <addaction name="menuAplikasi"/>
+   <addaction name="menuAplikasi_NonDB"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionForm_Data_Buku">
+   <property name="text">
+    <string>Form Data Buku</string>
+   </property>
+  </action>
+  <action name="actionPhonebook">
+   <property name="text">
+    <string>Phonebook</string>
+   </property>
+  </action>
+  <action name="actionForm_Create_New_DB_Tables">
+   <property name="text">
+    <string>Form Create New DB &amp; Tables</string>
+   </property>
+  </action>
+  <action name="actionDemo_QTableWidget">
+   <property name="text">
+    <string>Demo QTableWidget</string>
+   </property>
+  </action>
+  <action name="actionCRUD_Data_Barang">
+   <property name="text">
+    <string>CRUD Data Barang</string>
+   </property>
+  </action>
+  <action name="actionNavigasi_Data_Barang">
+   <property name="text">
+    <string>Navigasi Data Barang</string>
+   </property>
+  </action>
+  <action name="actionTest_6">
+   <property name="text">
+    <string>Test 6</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
