@@ -29,19 +29,18 @@ class MainForm(QDialog):
 
     def CreateTable(self):
         global tableDefinition
-        try:
-            conn = sqlite3.connect(self.lineEditDBName.text()+".db")
-            dbName = self.lineEditDBName.text()
-            tableName = self.lineEditTableName.text()
-            self.labelResponse.setText("Database %s is connected " %dbName)
-            c = conn.cursor()
+        db = QSqlDatabase.addDatabase('QSQLITE')
+        dbName = self.lineEditDBName.text()+".db"
+        db.setDatabaseName(dbName)
+        tableName = self.lineEditTableName.text()
+        if db.open():
+            #self.labelResponse.setText("Database %s is connected " %dbName)
             tableDefinition+=");"
-            c.execute(tableDefinition) 
+            query = QSqlQuery()
+            query.exec_(tableDefinition)
             self.labelResponse.setText("Table %s is successfully created" %tableName)
-        except Error as e:
+        else:
             self.labelResponse.setText("Error in creating table")
-        finally:
-            conn.close()
 
 if __name__=="__main__":
     app = QApplication(sys.argv) 
